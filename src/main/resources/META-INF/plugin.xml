@@ -1,0 +1,14 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>cn.ztion.JarPlace</id>
+    <name>JarPlace</name>
+    <vendor>JetBrains</vendor>
+    <description>把微服务项目中所有模块的jar包移动到项目根目录，author:ZtionJam</description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <actions>
+        <action id="gather" class="cn.ztion.jarPlace.Start" text="集中Jar包" description="集中所有jar">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
